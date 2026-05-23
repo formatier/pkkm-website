@@ -1,14 +1,54 @@
+<script setup lang="ts">
+import { motion } from "motion-v";
+
+const handleScroll = () => {};
+
+onMounted(() => {
+    window.addEventListener("scroll", handleScroll);
+});
+onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll);
+});
+
+const isMobileNavOpen = ref(false);
+</script>
+
 <template>
-    <div>
-        <ul>
+    <div
+        class="flex justify-between vision-padding-x py-4 sticky top-0 items-center font-kanit font-light"
+    >
+        <ul class="flex gap-3 items-center">
+            <button
+                @click="() => (isMobileNavOpen = !isMobileNavOpen)"
+                class="lg:hidden size-6"
+            >
+                <Icon name="ph:list" class="size-6"></Icon>
+            </button>
             <li>
                 <slot name="icon"></slot>
             </li>
-            <slot></slot>
+            <div class="lg:flex gap-1 hidden">
+                <slot></slot>
+            </div>
         </ul>
 
-        <ul>
+        <ul class="flex gap-4">
             <slot name="external-link"></slot>
         </ul>
+    </div>
+
+    <div
+        class="lg:hidden flex flex-col gap-1 fixed top-0 w-full p-3 z-10 h-dvh bg-white"
+        v-if="isMobileNavOpen"
+    >
+        <div class="flex justify-between px-4 py-3">
+            <button @click="() => (isMobileNavOpen = false)" class="size-6">
+                <Icon name="ph:x" class="size-6"></Icon>
+            </button>
+            <div></div>
+        </div>
+        <div class="flex flex-col gap-1">
+            <slot></slot>
+        </div>
     </div>
 </template>
