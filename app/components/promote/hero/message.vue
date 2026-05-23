@@ -5,7 +5,7 @@
         </h1>
         <p class="text-xl font-light leading-10 lg:text-start text-center">
             เลือกรวมใจฟ้าขาวเข้าไปเป็นสภา เลือกอนาคตที่ดีกว่า
-            พวกเรามาพร้อมกับนโยบายยุคใหม่ที่ตอบโจทย์ทุกคนและทำได้จริง
+            พวกเรามาพร้อมกับนโยบายยุคใหม่ที่ตอบโจทย์ทุกคนและพร้อมลงมือทำให้เกิดขึ้นจริงเพื่อพัฒนาโรงเรียน
         </p>
         <div class="flex gap-3 lg:justify-start justify-center">
             <NuxtLink class="btn btn-primary btn-lg" to="/policy">
