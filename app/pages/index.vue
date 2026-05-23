@@ -7,9 +7,9 @@
         </template>
 
         <template #default>
-            <PromoteNavItem to="/" title="">นโยบาย</PromoteNavItem>
-            <PromoteNavItem to="/" title="">สมาชิก</PromoteNavItem>
-            <PromoteNavItem to="/" title="">จุดมุ่งหมาย</PromoteNavItem>
+            <PromoteNavItem to="/polcies" title="">นโยบาย</PromoteNavItem>
+            <PromoteNavItem to="/members" title="">สมาชิก</PromoteNavItem>
+            <PromoteNavItem to="/goals" title="">จุดมุ่งหมาย</PromoteNavItem>
         </template>
 
         <template #external-link>
