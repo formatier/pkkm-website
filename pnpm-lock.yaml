@@ -29,6 +29,9 @@ importers:
       vue-router:
         specifier: ^5.0.7
         version: 5.0.7(@vue/compiler-sfc@3.5.34)(vue@3.5.34)
+      vue3-marquee:
+        specifier: ^4.2.2
+        version: 4.2.2(vue@3.5.34)
 
 packages:
 
@@ -3671,6 +3674,12 @@ packages:
         optional: true
       pinia:
         optional: true
+
+  vue3-marquee@4.2.2:
+    resolution: {integrity: sha512-FeFvGUVInKfFilXFcnl8sDRBJBZCZSNLlQDquJErB9db6W2xICRVqbRV/jtdzsEP0rftarLQhx9MeEAU0+TPuQ==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      vue: ^3.2
 
   vue@3.5.34:
     resolution: {integrity: sha512-WdLBG9gm02OgJIG9axd5Hpx0TFLdzVgfG2evFFu8Rur5O/IoGc5cMjnjh3tPL6GnRGsYvUhBSKVPYVcxRKpMCA==}
@@ -7428,6 +7437,10 @@ snapshots:
       yaml: 2.9.0
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.34
+
+  vue3-marquee@4.2.2(vue@3.5.34):
+    dependencies:
+      vue: 3.5.34
 
   vue@3.5.34:
     dependencies:

@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { motion } from "motion-v";
+const isMobileNavOpen = ref(false);
+const isScrolled = ref(false);
 
-const handleScroll = () => {};
+const handleScroll = () => {
+    isScrolled.value = window.scrollY > 0;
+};
 
 onMounted(() => {
     window.addEventListener("scroll", handleScroll);
@@ -9,13 +12,12 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
 });
-
-const isMobileNavOpen = ref(false);
 </script>
 
 <template>
     <div
         class="flex justify-between vision-padding-x py-4 sticky top-0 items-center font-kanit font-light"
+        :class="isScrolled ? 'shadow' : ''"
     >
         <ul class="flex gap-3 items-center">
             <button

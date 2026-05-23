@@ -19,9 +19,13 @@
     --font-prompt: "Prompt", sans-serif;
 }
 
+body {
+    background: white;
+}
+
 @layer components {
     .btn {
-        @apply px-4 rounded-lg min-w-16 inline-flex items-center justify-center cursor-pointer;
+        @apply px-4 rounded-lg min-w-16 inline-flex items-center justify-center cursor-pointer select-none;
     }
 
     .btn-primary {

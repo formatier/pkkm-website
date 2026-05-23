@@ -25,5 +25,35 @@
         </template>
     </PromoteNav>
 
-    <PromoteHero></PromoteHero>
+    <PromoteHero>
+        <PromoteHeroMessage>
+            <PromoteHeroMessageHeader>
+                เลือกคนพร้อมทำ<br />พวกเราพร้อมพัฒนา
+            </PromoteHeroMessageHeader>
+
+            <PromoteHeroMessageParagraph>
+                เลือกรวมใจฟ้าขาวเข้าไปเป็นสภา เลือกอนาคตที่ดีกว่า
+                พวกเรามาพร้อมกับนโยบายยุคใหม่ที่ตอบโจทย์ทุกคนและพร้อมลงมือทำให้เกิดขึ้นจริงเพื่อพัฒนาโรงเรียน
+            </PromoteHeroMessageParagraph>
+
+            <div class="flex gap-5 lg:justify-start justify-center">
+                <NuxtLink class="btn btn-primary btn-lg" to="/policy">
+                    นโยบาย
+                </NuxtLink>
+                <NuxtLink class="btn btn-outline btn-lg" to="/policy">
+                    เสนอความคิดเห็น
+                </NuxtLink>
+            </div>
+        </PromoteHeroMessage>
+
+        <PromoteHeroGallery></PromoteHeroGallery>
+    </PromoteHero>
+
+    <PromoteMarquee>
+        <p>เข้าคูหา กาเบอร์</p>
+    </PromoteMarquee>
+
+    <PromoteSection>
+        <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
+    </PromoteSection>
 </template>
