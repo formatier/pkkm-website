@@ -55,5 +55,13 @@
 
     <PromoteSection>
         <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
+        <PromoteSectionMember>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+        </PromoteSectionMember>
     </PromoteSection>
 </template>
