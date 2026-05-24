@@ -28,7 +28,9 @@
     <PromoteHero>
         <PromoteHeroMessage>
             <PromoteHeroMessageHeader>
-                เลือกคนพร้อมทำ<br />พวกเราพร้อมพัฒนา
+                เลือกคนพร้อมทำ<br />พวกเรา<br
+                    class="lg:hidden block"
+                />พร้อมพัฒนา
             </PromoteHeroMessageHeader>
 
             <PromoteHeroMessageParagraph>
