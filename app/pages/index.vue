@@ -2,7 +2,10 @@
     <PromoteNav>
         <template #icon>
             <NuxtLink to="/">
-                <p class="text-2xl">พรรครวมใจฟ้าขาว</p>
+                <div class="flex items-center gap-3">
+                    <Icon name="logos:logo" class="size-12" />
+                    <p class="text-2xl">ฟ้าขาวก้าวใหม่</p>
+                </div>
             </NuxtLink>
         </template>
 
@@ -34,7 +37,7 @@
             </PromoteHeroMessageHeader>
 
             <PromoteHeroMessageParagraph>
-                เลือกรวมใจฟ้าขาวเข้าไปเป็นสภา เลือกอนาคตที่ดีกว่า
+                เลือกฟ้าขาวก้าวใหม่เข้าไปเป็นสภา เลือกอนาคตที่ดีกว่า
                 พวกเรามาพร้อมกับนโยบายยุคใหม่ที่ตอบโจทย์ทุกคนและพร้อมลงมือทำให้เกิดขึ้นจริงเพื่อพัฒนาโรงเรียน
             </PromoteHeroMessageParagraph>
 
@@ -51,11 +54,7 @@
         <PromoteHeroGallery></PromoteHeroGallery>
     </PromoteHero>
 
-    <PromoteMarquee>
-        <p>เข้าคูหา กาเบอร์</p>
-    </PromoteMarquee>
-
-    <PromoteSection>
+    <PromoteSection bg-color="zodiac">
         <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
         <PromoteSectionMember>
             <PromoteSectionMemberCard></PromoteSectionMemberCard>
