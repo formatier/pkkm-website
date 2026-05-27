@@ -34,7 +34,7 @@ onUnmounted(() => {
             </div>
         </ul>
 
-        <ul class="flex gap-4">
+        <ul class="flex gap-4 items-center">
             <slot name="external-link"></slot>
         </ul>
     </div>
