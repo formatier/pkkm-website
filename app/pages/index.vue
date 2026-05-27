@@ -16,14 +16,11 @@
         </template>
 
         <template #external-link>
-            <NuxtLink to="/">
+            <NuxtLink to="/" class="flex items-center">
                 <Icon name="ph:instagram-logo" class="size-6"></Icon>
             </NuxtLink>
-            <NuxtLink to="/">
+            <NuxtLink to="/" class="flex items-center">
                 <Icon name="ph:tiktok-logo" class="size-6"></Icon>
-            </NuxtLink>
-            <NuxtLink to="/">
-                <Icon name="ph:facebook-logo" class="size-6"></Icon>
             </NuxtLink>
         </template>
     </PromoteNav>
@@ -55,6 +52,18 @@
     </PromoteHero>
 
     <PromoteSection bg-color="zodiac">
+        <PromoteSectionHeader>ข่าวสารพรรค</PromoteSectionHeader>
+        <PromoteSectionMember>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+            <PromoteSectionMemberCard></PromoteSectionMemberCard>
+        </PromoteSectionMember>
+    </PromoteSection>
+
+    <PromoteSection>
         <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
         <PromoteSectionMember>
             <PromoteSectionMemberCard></PromoteSectionMemberCard>
@@ -64,5 +73,10 @@
             <PromoteSectionMemberCard></PromoteSectionMemberCard>
             <PromoteSectionMemberCard></PromoteSectionMemberCard>
         </PromoteSectionMember>
+    </PromoteSection>
+
+    <PromoteSection>
+        <PromoteSectionHeader>นโยบาย</PromoteSectionHeader>
+        <PromoteSectionPolicy> </PromoteSectionPolicy>
     </PromoteSection>
 </template>
