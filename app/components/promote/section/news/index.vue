@@ -1,5 +1,5 @@
 <template>
-    <div class="p-6 bg-white rounded-xl grid grid-cols-2">
+    <div class="p-6 bg-white rounded-xl flex flex-col min-h-128">
         <slot />
     </div>
 </template>

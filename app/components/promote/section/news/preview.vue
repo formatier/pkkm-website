@@ -1,3 +1,5 @@
 <template>
-    <div class="p-6 bg-white rounded-xl"></div>
+    <div class="bg-white rounded-xl">
+        
+    </div>
 </template>
