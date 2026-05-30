@@ -53,14 +53,10 @@
 
     <PromoteSection bg-color="zodiac">
         <PromoteSectionHeader>ข่าวสารพรรค</PromoteSectionHeader>
-        <PromoteSectionMember>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-        </PromoteSectionMember>
+        <PromoteSectionNews>
+            <PromoteSectionNewsList></PromoteSectionNewsList>
+            <PromoteSectionNewsPreview></PromoteSectionNewsPreview>
+        </PromoteSectionNews>
     </PromoteSection>
 
     <PromoteSection>
