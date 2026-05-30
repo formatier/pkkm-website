@@ -4,7 +4,7 @@
 
 <template>
     <div class="flex justify-end w-full flex-nowrap">
-        <div class="xl:w-xl xl:block hidden aspect-video w-full">
+        <div class="aspect-video w-full">
             <AppGallery/>
         </div>
     </div>
