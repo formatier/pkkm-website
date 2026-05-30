@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
 
   css: ["./app/assets/css/main.css"],
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "@nuxt/image"],
 
   icon: {
     mode: "css",
