@@ -52,27 +52,28 @@
     </PromoteHero>
 
     <PromoteSection bg-color="zodiac">
+        <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
+        <PromoteSectionMember>
+            <PromoteSectionMemberMainCard> </PromoteSectionMemberMainCard>
+            <PromoteSectionMemberCardContainer>
+                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
+                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
+                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
+                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
+            </PromoteSectionMemberCardContainer>
+        </PromoteSectionMember>
+    </PromoteSection>
+
+    <PromoteSection bg-color="zodiac">
+        <PromoteSectionHeader>นโยบาย</PromoteSectionHeader>
+        <PromoteSectionPolicy> </PromoteSectionPolicy>
+    </PromoteSection>
+
+    <PromoteSection>
         <PromoteSectionHeader>ข่าวสารพรรค</PromoteSectionHeader>
         <PromoteSectionNews>
             <PromoteSectionNewsList></PromoteSectionNewsList>
             <PromoteSectionNewsPreview></PromoteSectionNewsPreview>
         </PromoteSectionNews>
-    </PromoteSection>
-
-    <PromoteSection>
-        <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
-        <PromoteSectionMember>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-            <PromoteSectionMemberCard></PromoteSectionMemberCard>
-        </PromoteSectionMember>
-    </PromoteSection>
-
-    <PromoteSection>
-        <PromoteSectionHeader>นโยบาย</PromoteSectionHeader>
-        <PromoteSectionPolicy> </PromoteSectionPolicy>
     </PromoteSection>
 </template>

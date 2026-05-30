@@ -5,7 +5,7 @@
             <h1 class="text-2xl font-semibold">กระดานข่าวสารต่าง ๆ</h1>
         </div>
         <div class="text-black">
-            <slot/>
+            <slot />
         </div>
     </div>
 </template>
