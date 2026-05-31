@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+let members = useMembers();
+</script>
+
 <template>
     <PromoteNav>
         <template #icon>
@@ -54,7 +58,74 @@
     <PromoteSection bg-color="zodiac">
         <PromoteSectionHeader>สมาชิก</PromoteSectionHeader>
         <PromoteSectionMember>
-            <PromoteSectionMemberMainCard> </PromoteSectionMemberMainCard>
+            <PromoteSectionMemberMainCard>
+                <PromoteSectionMemberMainCardImage></PromoteSectionMemberMainCardImage>
+                <PromoteSectionMemberMainCardInfo>
+                    <PromoteSectionMemberMainCardInfoTag>
+                        {{ members.president.tag }}
+                    </PromoteSectionMemberMainCardInfoTag>
+                    <PromoteSectionMemberMainCardInfoName>
+                        {{ members.president.name }}
+                    </PromoteSectionMemberMainCardInfoName>
+                    <PromoteSectionMemberMainCardInfoQuote>
+                        {{ members.president.quote }}
+                    </PromoteSectionMemberMainCardInfoQuote>
+
+                    <PromoteSectionMemberMainCardInfoProfile>
+                        <PromoteSectionMemberMainCardInfoProfileInfoSection>
+                            <PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                ชื่อเล่น
+                                <template #text>
+                                    {{ members.president.info.nickname }}
+                                </template>
+                            </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                            <div class="flex gap-4">
+                                <PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                    เกิด
+                                    <template #text>
+                                        {{ members.president.info.birthday }}
+                                    </template>
+                                </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                <PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                    อายุ
+                                    <template #text> 15 </template>
+                                </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                            </div>
+                            <PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                ความสามารถพิเศษ
+                                <template #text>
+                                    {{ members.president.info.hobby }}
+                                </template>
+                            </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                            <div class="flex gap-4">
+                                <PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                    ชั้น
+                                    <template #text>
+                                        ม.{{ members.president.info.grade }}
+                                    </template>
+                                </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                <PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                                    ห้องเรียน
+                                    <template #text>
+                                        {{ members.president.info.program }}
+                                    </template>
+                                </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                            </div>
+                            <PromoteSectionMemberMainCardInfoProfileInfoAtom
+                                v-for="(value, key) in members.president.info
+                                    .custom"
+                                :key="key"
+                            >
+                                {{ key }}
+                                <template #text>
+                                    {{ value }}
+                                </template>
+                            </PromoteSectionMemberMainCardInfoProfileInfoAtom>
+                        </PromoteSectionMemberMainCardInfoProfileInfoSection>
+                    </PromoteSectionMemberMainCardInfoProfile>
+                </PromoteSectionMemberMainCardInfo>
+            </PromoteSectionMemberMainCard>
+
             <PromoteSectionMemberCardContainer>
                 <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
                 <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>

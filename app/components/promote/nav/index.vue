@@ -16,7 +16,7 @@ onUnmounted(() => {
 
 <template>
     <div
-        class="flex justify-between vision-padding-x py-4 sticky top-0 items-center font-kanit font-light bg-white transition"
+        class="flex justify-between vision-padding-x py-4 sticky top-0 items-center font-kanit font-light bg-white transition z-1000"
         :class="isScrolled ? 'shadow' : ''"
     >
         <ul class="flex gap-3 items-center">
