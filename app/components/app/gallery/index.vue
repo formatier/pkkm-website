@@ -6,6 +6,7 @@ const images = [
     "/hero-images/2.webp",
     "/hero-images/3.webp",
     "/hero-images/4.webp",
+    "/hero-images/5.webp",
 ];
 
 const currentIdx = ref(0);
