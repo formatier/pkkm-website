@@ -1,8 +1,14 @@
 <script lang="ts" setup>
 let members = useMembers();
+const route = useRoute()
+
+const d_id = route.query.d_id?.toString()
 </script>
 
 <template>
+    <div v-if="d_id" class="absolute bg-white p-18 text-bold text-9xl z-2000">
+        {{  d_id  }}
+    </div>
     <PromoteNav>
         <template #icon>
             <NuxtLink to="/">
