@@ -30,7 +30,7 @@ export function useMembers(props?: UseMembersProps) {
       imageUrl: "/member-profiles/efs.png",
       name: "พัชรณัฏฐ์ สีหาวัตร",
       tag: "หัวหน้าพรรค",
-      quote: "ผมชื่อเอฟเพราะอะไรก็ไม่รู้",
+      quote: "ปัญหาทำให้ฉันเติบโต จนจำเวอร์ชั่นเดิมไม่ได้",
       info: {
         nickname: "เอฟ",
         birthday: "28/02/2011",

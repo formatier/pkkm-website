@@ -43,7 +43,7 @@ let members = useMembers();
             </PromoteHeroMessageParagraph>
 
             <div class="flex gap-5 lg:justify-start justify-center">
-                <NuxtLink class="btn btn-primary btn-lg" to="/policy">
+                <NuxtLink class="btn btn-primary btn-lg opacity-50" to="/policy">
                     นโยบาย
                 </NuxtLink>
                 <NuxtLink class="btn btn-outline btn-lg" to="/policy">
@@ -127,10 +127,10 @@ let members = useMembers();
             </PromoteSectionMemberMainCard>
 
             <PromoteSectionMemberCardContainer>
-                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
-                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
-                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
-                <PromotePromoteSectionMemberCard></PromotePromoteSectionMemberCard>
+                <PromoteSectionMemberCard></PromoteSectionMemberCard>
+                <PromoteSectionMemberCard></PromoteSectionMemberCard>
+                <PromoteSectionMemberCard></PromoteSectionMemberCard>
+                <PromoteSectionMemberCard></PromoteSectionMemberCard>
             </PromoteSectionMemberCardContainer>
         </PromoteSectionMember>
     </PromoteSection>

@@ -17,6 +17,8 @@
     --color-blue-zodiac-950: #11284a;
     --font-kanit: "Kanit", sans-serif;
     --font-prompt: "Prompt", sans-serif;
+
+    --breakpoint-3xl: 108rem;
 }
 
 body {
@@ -49,7 +51,7 @@ body {
     }
 
     .vision-padding-x {
-        @apply px-6 sm:px-16 md:px-22 lg:px-28 xl:px-42 2xl:px-64;
+        @apply px-6 sm:px-16 md:px-22 lg:px-26 xl:px-32 2xl:px-46 3xl:px-64;
     }
 }
 

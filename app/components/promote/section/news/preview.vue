@@ -1,3 +1,3 @@
 <template>
-    <div class="bg-white rounded-xl"></div>
+    <div class=""></div>
 </template>

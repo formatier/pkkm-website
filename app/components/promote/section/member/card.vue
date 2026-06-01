@@ -1,3 +1,3 @@
 <template>
-    <div class="flex flex-col items-center">รายชื่อสมาชิกสภานักเรียน</div>
+    <div class="bg-white rounded-xl p-6"></div>
 </template>
