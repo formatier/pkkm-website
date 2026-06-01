@@ -40,7 +40,7 @@ onUnmounted(() => {
     </div>
 
     <div
-        class="lg:hidden flex flex-col gap-1 fixed top-0 w-full p-3 z-10 h-dvh bg-white font-kanit font-light"
+        class="lg:hidden flex flex-col gap-1 fixed top-0 w-full p-3 z-1001 h-dvh bg-white font-kanit font-light"
         v-if="isMobileNavOpen"
     >
         <div class="flex justify-between px-4 py-3">
