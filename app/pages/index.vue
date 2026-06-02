@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+definePageMeta({
+    layout: "promote"
+})
+
 let members = useMembers();
 const route = useRoute();
 
@@ -6,32 +10,6 @@ const d_id = route.query.d_id?.toString();
 </script>
 
 <template>
-    <PromoteNav>
-        <template #icon>
-            <NuxtLink to="/">
-                <div class="flex items-center gap-3">
-                    <Icon name="logos:logo" class="size-12" />
-                    <p class="text-2xl">ฟ้าขาวก้าวใหม่</p>
-                </div>
-            </NuxtLink>
-        </template>
-
-        <template #default>
-            <PromoteNavItem to="/polcies" title="">นโยบาย</PromoteNavItem>
-            <PromoteNavItem to="/members" title="">สมาชิก</PromoteNavItem>
-            <PromoteNavItem to="/goals" title="">จุดมุ่งหมาย</PromoteNavItem>
-        </template>
-
-        <template #external-link>
-            <NuxtLink to="/" class="flex items-center">
-                <Icon name="ph:instagram-logo" class="size-6"></Icon>
-            </NuxtLink>
-            <NuxtLink to="/" class="flex items-center">
-                <Icon name="ph:tiktok-logo" class="size-6"></Icon>
-            </NuxtLink>
-        </template>
-    </PromoteNav>
-
     <PromoteHero>
         <PromoteHeroMessage>
             <PromoteHeroMessageHeader>
@@ -137,6 +115,12 @@ const d_id = route.query.d_id?.toString();
                     <PromoteSectionMemberCardImage>
                     </PromoteSectionMemberCardImage>
                     <PromoteSectionMemberCardProfile>
+                        <PromoteSectionMemberCardProfileTag>
+                            รองหัวหน้าพรรค
+                        </PromoteSectionMemberCardProfileTag>
+                        <PromoteSectionMemberCardProfileName>
+                            อรัญธนชัย แตงเส็ง
+                        </PromoteSectionMemberCardProfileName>
                         <PromoteSectionMemberCardProfileAtom>
                             อายุ
                             <template #text> 15 </template>
