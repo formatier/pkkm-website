@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 let members = useMembers();
-const route = useRoute()
+const route = useRoute();
 
-const d_id = route.query.d_id?.toString()
+const d_id = route.query.d_id?.toString();
 </script>
 
 <template>
@@ -46,7 +46,10 @@ const d_id = route.query.d_id?.toString()
             </PromoteHeroMessageParagraph>
 
             <div class="flex gap-5 lg:justify-start justify-center">
-                <NuxtLink class="btn btn-primary btn-lg opacity-50" to="/policy">
+                <NuxtLink
+                    class="btn btn-primary btn-lg opacity-50"
+                    to="/policy"
+                >
                     นโยบาย
                 </NuxtLink>
                 <NuxtLink class="btn btn-outline btn-lg" to="/policy">
@@ -130,10 +133,43 @@ const d_id = route.query.d_id?.toString()
             </PromoteSectionMemberMainCard>
 
             <PromoteSectionMemberCardContainer>
-                <PromoteSectionMemberCard></PromoteSectionMemberCard>
-                <PromoteSectionMemberCard></PromoteSectionMemberCard>
-                <PromoteSectionMemberCard></PromoteSectionMemberCard>
-                <PromoteSectionMemberCard></PromoteSectionMemberCard>
+                <PromoteSectionMemberCard>
+                    <PromoteSectionMemberCardImage>
+                    </PromoteSectionMemberCardImage>
+                    <PromoteSectionMemberCardProfile>
+                        <PromoteSectionMemberCardProfileAtom>
+                            อายุ
+                            <template #text> 15 </template>
+                        </PromoteSectionMemberCardProfileAtom>
+                    </PromoteSectionMemberCardProfile>
+                </PromoteSectionMemberCard>
+
+                <PromoteSectionMemberCard>
+                    <PromoteSectionMemberCardImage>
+                    </PromoteSectionMemberCardImage>
+                    <PromoteSectionMemberCardProfile>
+                        <PromoteSectionMemberCardProfileAtom>
+                        </PromoteSectionMemberCardProfileAtom>
+                    </PromoteSectionMemberCardProfile>
+                </PromoteSectionMemberCard>
+
+                <PromoteSectionMemberCard>
+                    <PromoteSectionMemberCardImage>
+                    </PromoteSectionMemberCardImage>
+                    <PromoteSectionMemberCardProfile>
+                        <PromoteSectionMemberCardProfileAtom>
+                        </PromoteSectionMemberCardProfileAtom>
+                    </PromoteSectionMemberCardProfile>
+                </PromoteSectionMemberCard>
+
+                <PromoteSectionMemberCard>
+                    <PromoteSectionMemberCardImage>
+                    </PromoteSectionMemberCardImage>
+                    <PromoteSectionMemberCardProfile>
+                        <PromoteSectionMemberCardProfileAtom>
+                        </PromoteSectionMemberCardProfileAtom>
+                    </PromoteSectionMemberCardProfile>
+                </PromoteSectionMemberCard>
             </PromoteSectionMemberCardContainer>
         </PromoteSectionMember>
     </PromoteSection>

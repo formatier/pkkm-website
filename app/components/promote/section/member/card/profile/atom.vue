@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-2 md:gap-4 flex-wrap">
+    <div class="flex gap-2 md:gap-4 flex-wrap text-blue-zodiac-950 font-prompt">
         <h1 class="text-xl lg:text-2xl font-medium">
             <slot></slot>
         </h1>
