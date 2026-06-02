@@ -6,7 +6,7 @@ const props = withDefaults(defineProps<{ src?: string }>(), {
 
 <template>
     <div
-        class="w-full lg:h-full overflow-hidden absolute bottom-0 -right-20 lg:static lg:flex items-end -z-10"
+        class="w-full lg:h-full overflow-hidden absolute bottom-0 -right-20 lg:static lg:flex items-end -z-10 select-none"
     >
         <NuxtImg :src="props.src" class="aspect-square w-full"></NuxtImg>
     </div>

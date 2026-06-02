@@ -1,9 +1,13 @@
 <script lang="ts" setup>
 definePageMeta({
-    layout: "promote"
-})
+    layout: "promote",
+});
 
-let members = useMembers();
+let headMembers = useMembers({
+    query: {
+        tag: "รองหัวหน้าพรรค",
+    },
+});
 const route = useRoute();
 
 const d_id = route.query.d_id?.toString();
@@ -46,13 +50,13 @@ const d_id = route.query.d_id?.toString();
                 <PromoteSectionMemberMainCardImage></PromoteSectionMemberMainCardImage>
                 <PromoteSectionMemberMainCardInfo>
                     <PromoteSectionMemberMainCardInfoTag>
-                        {{ members.president.tag }}
+                        {{ headMembers.president.tag }}
                     </PromoteSectionMemberMainCardInfoTag>
                     <PromoteSectionMemberMainCardInfoName>
-                        {{ members.president.name }}
+                        {{ headMembers.president.name }}
                     </PromoteSectionMemberMainCardInfoName>
                     <PromoteSectionMemberMainCardInfoQuote>
-                        {{ members.president.quote }}
+                        {{ headMembers.president.quote }}
                     </PromoteSectionMemberMainCardInfoQuote>
 
                     <PromoteSectionMemberMainCardInfoProfile>
@@ -60,14 +64,16 @@ const d_id = route.query.d_id?.toString();
                             <PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                 ชื่อเล่น
                                 <template #text>
-                                    {{ members.president.info.nickname }}
+                                    {{ headMembers.president.info.nickname }}
                                 </template>
                             </PromoteSectionMemberMainCardInfoProfileInfoAtom>
                             <div class="flex gap-4">
                                 <PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                     เกิด
                                     <template #text>
-                                        {{ members.president.info.birthday }}
+                                        {{
+                                            headMembers.president.info.birthday
+                                        }}
                                     </template>
                                 </PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                 <PromoteSectionMemberMainCardInfoProfileInfoAtom>
@@ -78,26 +84,26 @@ const d_id = route.query.d_id?.toString();
                             <PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                 ความสามารถพิเศษ
                                 <template #text>
-                                    {{ members.president.info.hobby }}
+                                    {{ headMembers.president.info.hobby }}
                                 </template>
                             </PromoteSectionMemberMainCardInfoProfileInfoAtom>
                             <div class="flex gap-4">
                                 <PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                     ชั้น
                                     <template #text>
-                                        ม.{{ members.president.info.grade }}
+                                        ม.{{ headMembers.president.info.grade }}
                                     </template>
                                 </PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                 <PromoteSectionMemberMainCardInfoProfileInfoAtom>
                                     ห้องเรียน
                                     <template #text>
-                                        {{ members.president.info.program }}
+                                        {{ headMembers.president.info.program }}
                                     </template>
                                 </PromoteSectionMemberMainCardInfoProfileInfoAtom>
                             </div>
                             <PromoteSectionMemberMainCardInfoProfileInfoAtom
-                                v-for="(value, key) in members.president.info
-                                    .custom"
+                                v-for="(value, key) in headMembers.president
+                                    .info.custom"
                                 :key="key"
                             >
                                 {{ key }}
@@ -111,48 +117,60 @@ const d_id = route.query.d_id?.toString();
             </PromoteSectionMemberMainCard>
 
             <PromoteSectionMemberCardContainer>
-                <PromoteSectionMemberCard>
-                    <PromoteSectionMemberCardImage>
+                <PromoteSectionMemberCard
+                    v-for="(member, idx) in [
+                        headMembers.department.academic[0],
+                        headMembers.department.studentActivity[0],
+                        headMembers.department.service[0],
+                        headMembers.department.studentRule[0],
+                    ]"
+                >
+                    <PromoteSectionMemberCardImage :src="member?.imageUrl">
                     </PromoteSectionMemberCardImage>
                     <PromoteSectionMemberCardProfile>
                         <PromoteSectionMemberCardProfileTag>
                             รองหัวหน้าพรรค
                         </PromoteSectionMemberCardProfileTag>
                         <PromoteSectionMemberCardProfileName>
-                            อรัญธนชัย แตงเส็ง
+                            {{ member?.name }}
                         </PromoteSectionMemberCardProfileName>
                         <PromoteSectionMemberCardProfileAtom>
-                            อายุ
-                            <template #text> 15 </template>
+                            ชื่อเล่น
+                            <template #text>
+                                {{ member?.info.nickname }}
+                            </template>
                         </PromoteSectionMemberCardProfileAtom>
-                    </PromoteSectionMemberCardProfile>
-                </PromoteSectionMemberCard>
-
-                <PromoteSectionMemberCard>
-                    <PromoteSectionMemberCardImage>
-                    </PromoteSectionMemberCardImage>
-                    <PromoteSectionMemberCardProfile>
                         <PromoteSectionMemberCardProfileAtom>
+                            ฝ่าย
+                            <template #text>
+                                {{
+                                    idx === 0
+                                        ? "วิชาการ"
+                                        : idx === 1
+                                          ? "กิจกรรม"
+                                          : idx === 2
+                                            ? "บริการ"
+                                            : "ระเบียบ"
+                                }}
+                            </template>
                         </PromoteSectionMemberCardProfileAtom>
                     </PromoteSectionMemberCardProfile>
-                </PromoteSectionMemberCard>
-
-                <PromoteSectionMemberCard>
-                    <PromoteSectionMemberCardImage>
-                    </PromoteSectionMemberCardImage>
-                    <PromoteSectionMemberCardProfile>
-                        <PromoteSectionMemberCardProfileAtom>
-                        </PromoteSectionMemberCardProfileAtom>
-                    </PromoteSectionMemberCardProfile>
-                </PromoteSectionMemberCard>
-
-                <PromoteSectionMemberCard>
-                    <PromoteSectionMemberCardImage>
-                    </PromoteSectionMemberCardImage>
-                    <PromoteSectionMemberCardProfile>
-                        <PromoteSectionMemberCardProfileAtom>
-                        </PromoteSectionMemberCardProfileAtom>
-                    </PromoteSectionMemberCardProfile>
+                    <template #link>
+                        <NuxtLink
+                            :to="`/members#${
+                                idx === 0
+                                    ? 'academic'
+                                    : idx === 1
+                                      ? 'student-activity'
+                                      : idx === 2
+                                        ? 'service'
+                                        : 'student_rule'
+                            }`"
+                            class="w-full h-full flex items-center justify-center text-white underline"
+                        >
+                            ดูเพิ่มเติม
+                        </NuxtLink>
+                    </template>
                 </PromoteSectionMemberCard>
             </PromoteSectionMemberCardContainer>
         </PromoteSectionMember>
