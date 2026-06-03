@@ -89,7 +89,7 @@ onUnmounted(() => {
 <template>
     <div class="relative w-full h-full max-w-2xl mx-auto overflow-hidden">
         <div class="relative w-full h-full overflow-hidden rounded-2xl">
-            <AnimatePresence :custom="direction">
+            <AnimatePresence :custom="direction" :initial="false">
                 <motion.div
                     :key="currentIdx"
                     :custom="direction"

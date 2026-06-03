@@ -10,7 +10,7 @@
         </template>
 
         <template #default>
-            <PromoteNavItem to="/polcies" title="">นโยบาย</PromoteNavItem>
+            <PromoteNavItem to="/policies" title="">นโยบาย</PromoteNavItem>
             <PromoteNavItem to="/members" title="">สมาชิก</PromoteNavItem>
             <PromoteNavItem to="/goals" title="">จุดมุ่งหมาย</PromoteNavItem>
         </template>

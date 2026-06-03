@@ -2,7 +2,6 @@
 definePageMeta({
     layout: "promote"
 })
-
 </script>
 
 <template></template>
