@@ -101,12 +101,12 @@ onUnmounted(() => {
                 >
                     <NuxtImg
                         :src="images[currentIdx]"
-                        alt="Gallery Image"
+                        alt=""
                         class="w-full h-full object-cover transition-all duration-700 ease-out"
                         :class="
                             loadedImages[images[currentIdx] || 0]
                                 ? 'blur-0'
-                                : 'blur-xl'
+                                : 'blur-sm'
                         "
                         @load="handleImageLoad(images[currentIdx] || '')"
                         loading="eager"
@@ -126,7 +126,7 @@ onUnmounted(() => {
             <button
                 @click="updateSubject.next('prev')"
                 class="btn btn-primary btn-sm z-10"
-                :class="hovered ? 'opacity-100' : 'opacity-0'"
+                :class="hovered ? 'opacity-100' : 'opacity-20'"
             >
                 <Icon name="ph:caret-left-bold"></Icon>
             </button>
@@ -141,7 +141,7 @@ onUnmounted(() => {
             <button
                 @click="updateSubject.next('next')"
                 class="btn btn-primary btn-sm z-10"
-                :class="hovered ? 'opacity-100' : 'opacity-0'"
+                :class="hovered ? 'opacity-100' : 'opacity-20'"
             >
                 <Icon name="ph:caret-right-bold"></Icon>
             </button>

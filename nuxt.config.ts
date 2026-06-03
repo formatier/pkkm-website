@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
 
   css: ["./app/assets/css/main.css"],
-  modules: ["@nuxt/icon", "@nuxt/image"],
+  modules: ["@nuxt/icon", "@nuxt/image", "@nuxt/content"],
 
   icon: {
     mode: "css",
@@ -28,9 +28,5 @@ export default defineNuxtConfig({
         dir: resolve("./app/assets/logos"),
       },
     ],
-  },
-
-  app: {
-    pageTransition: { name: "page", mode: "out-in" },
   },
 });
