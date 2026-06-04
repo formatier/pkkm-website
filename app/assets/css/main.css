@@ -2,59 +2,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
-	--color-blue-zodiac-50: #eef8ff;
-	--color-blue-zodiac-100: #d9f0ff;
-	--color-blue-zodiac-200: #bce5ff;
-	--color-blue-zodiac-300: #8ed7ff;
-	--color-blue-zodiac-400: #58c0ff;
-	--color-blue-zodiac-500: #32a4ff;
-	--color-blue-zodiac-600: #1b85f5;
-	--color-blue-zodiac-700: #146de1;
-	--color-blue-zodiac-800: #1758b6;
-	--color-blue-zodiac-900: #194c8f;
-	--color-blue-zodiac-950: #11284a;
-	--font-kanit: "Kanit", sans-serif;
-	--font-prompt: "Prompt", sans-serif;
+    --color-blue-zodiac-50: #eef8ff;
+    --color-blue-zodiac-100: #d9f0ff;
+    --color-blue-zodiac-200: #bce5ff;
+    --color-blue-zodiac-300: #8ed7ff;
+    --color-blue-zodiac-400: #58c0ff;
+    --color-blue-zodiac-500: #32a4ff;
+    --color-blue-zodiac-600: #1b85f5;
+    --color-blue-zodiac-700: #146de1;
+    --color-blue-zodiac-800: #1758b6;
+    --color-blue-zodiac-900: #194c8f;
+    --color-blue-zodiac-950: #11284a;
+    --font-kanit: "Kanit", sans-serif;
+    --font-prompt: "Prompt", sans-serif;
 
-	--breakpoint-3xl: 108rem;
+    --breakpoint-3xl: 108rem;
 }
 
 body {
-	background: white;
+    background: white;
 }
 
 @layer components {
-	.btn {
-		@apply px-4 rounded-lg min-w-16 inline-flex items-center justify-center cursor-pointer select-none;
-	}
+    .btn {
+        @apply px-4 rounded-lg min-w-16 inline-flex items-center justify-center cursor-pointer select-none;
+    }
 
-	.btn-primary {
-		@apply bg-blue-zodiac-950 text-white hover:opacity-90;
-	}
-	.btn-fail {
-		@apply bg-red-700 text-white hover:bg-red-800;
-	}
-	.btn-outline {
-		@apply bg-transparent text-blue-zodiac-950 border border-blue-zodiac-950 hover:bg-blue-zodiac-950 hover:text-white;
-	}
+    .btn-primary {
+        @apply bg-blue-zodiac-950 text-white hover:opacity-90;
+    }
+    .btn-fail {
+        @apply bg-red-700 text-white hover:bg-red-800;
+    }
+    .btn-outline {
+        @apply bg-transparent text-blue-zodiac-950 border border-blue-zodiac-950 hover:bg-blue-zodiac-950 hover:text-white;
+    }
 
-	.btn-sm {
-		@apply text-sm min-h-8;
-	}
-	.btn-md {
-		@apply text-base min-h-9;
-	}
-	.btn-lg {
-		@apply text-lg min-h-11;
-	}
+    .btn-sm {
+        @apply text-sm min-h-8;
+    }
+    .btn-md {
+        @apply text-base min-h-9;
+    }
+    .btn-lg {
+        @apply text-lg min-h-11;
+    }
 
-	.vision-padding-x {
-		@apply px-6 sm:px-16 md:px-22 lg:px-26 xl:px-32 2xl:px-46 3xl:px-64;
-	}
+    .vision-padding-x {
+        @apply px-6 sm:px-16 md:px-22 lg:px-26 xl:px-32 2xl:px-46 3xl:px-64;
+    }
 }
 
 li {
-	list-style-type: none;
+    list-style-type: none;
 }
