@@ -2,6 +2,39 @@
 definePageMeta({
     layout: "promote",
 });
+
+const { data: academicPolicies } = await useAsyncData(
+    "academic-policies",
+    () => {
+        return queryCollection("policies")
+            .where("path", "LIKE", "/policies/academic/%")
+            .all();
+    },
+);
+
+const { data: servicePolicies } = await useAsyncData("service-policies", () => {
+    return queryCollection("policies")
+        .where("path", "LIKE", "/policies/service/%")
+        .all();
+});
+
+const { data: studentActivityPolicies } = await useAsyncData(
+    "student-activity-policies",
+    () => {
+        return queryCollection("policies")
+            .where("path", "LIKE", "/policies/student-activity/%")
+            .all();
+    },
+);
+
+const { data: studentRulePolicies } = await useAsyncData(
+    "student-rule-policies",
+    () => {
+        return queryCollection("policies")
+            .where("path", "LIKE", "/policies/student-rule/%")
+            .all();
+    },
+);
 </script>
 
 <template>
@@ -14,5 +47,30 @@ definePageMeta({
                 และได้รับการกลั่นกรองมาแล้วจากทุกคน
             </PolicyHeroParagraph>
         </PolicyHero>
+
+        <AppSection bgColor="zodiac">
+            <AppSectionHeader>นโยบายฝ่ายกิจกรรม</AppSectionHeader>
+            <PolicySectionCardContainer>
+                <PolicySectionCard
+                    v-for="policy in academicPolicies"
+                    :key="policy.id"
+                >
+                    <h1>{{ policy.title }}</h1>
+                    <p>{{ policy.description }}...</p>
+                </PolicySectionCard>
+            </PolicySectionCardContainer>
+        </AppSection>
+
+        <AppSection bgColor="zodiac">
+            <AppSectionHeader>นโยบายฝ่ายบริการ</AppSectionHeader>
+        </AppSection>
+
+        <AppSection bgColor="zodiac">
+            <AppSectionHeader>นโยบายฝ่ายวิชาการ</AppSectionHeader>
+        </AppSection>
+
+        <AppSection bgColor="zodiac">
+            <AppSectionHeader>นโยบายฝ่ายระเบียบ</AppSectionHeader>
+        </AppSection>
     </div>
 </template>

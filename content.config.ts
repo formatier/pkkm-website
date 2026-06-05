@@ -5,7 +5,10 @@ export default defineContentConfig({
   collections: {
     policies: defineCollection({
       type: "page",
-      source: "policies/*.md",
+      source: "policies/**/*.md",
+      schema: z.object({
+        title: z.string(),
+      }),
     }),
   },
 });
