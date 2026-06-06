@@ -22,7 +22,10 @@
             >
                 <Icon name="ph:instagram-logo" class="size-6"></Icon>
             </a>
-            <a href="/" class="flex items-center">
+            <a
+                href="https://www.tiktok.com/@phakaokhaomai.official"
+                class="flex items-center"
+            >
                 <Icon name="ph:tiktok-logo" class="size-6"></Icon>
             </a>
             <a
