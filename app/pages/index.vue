@@ -189,71 +189,70 @@ const d_id = route.query.d_id?.toString();
 
         <AppSection bg-color="zodiac">
             <AppSectionHeader>นโยบาย</AppSectionHeader>
-            <PromoteSectionPolicy>
-                <PolicySectionCard>
-                    <NuxtLink to="/policies/student-activity/custom-esport">
-                        <h1 class="underline">เกมที่ใช่ใครก็ชอบ</h1>
-                    </NuxtLink>
-                    <p>
-                        เล่นเกมเดียวไม่สนุก ต้องเล่น 2 ครั้ง ถึงจะสนุก
-                        อยากเล่นเกมไหนก็โหวตกันเลย...
-                    </p>
-                </PolicySectionCard>
-                <PolicySectionCard>
-                    <NuxtLink to="/policies/student-activity/custom-sport">
-                        <h1 class="underline">1 เสียง 1 สนาม</h1>
-                    </NuxtLink>
-                    <p>
-                        เล่นกีฬาเดียวไม่สนุก ต้องเล่น 2 ครั้ง ถึงจะสนุก
-                        อยากเล่นกีฬาไหนก็โหวตกันเลย...
-                    </p>
-                </PolicySectionCard>
-                <PolicySectionCard>
-                    <NuxtLink to="/policies/student-activity/random-dance">
-                        <h1 class="underline">เต้นสุ่มจุ่มเพลง</h1>
-                    </NuxtLink>
-                    <p>
-                        เต้นเพลงเดียวสนุกหรอ ต้องเต้นหลาย ๆ เพลงสิถึงจะสนุก
-                        จัดทุก ๆ วันศุกร์สุดท้ายของเดือน...
-                    </p>
-                </PolicySectionCard>
+            <div class="flex flex-col font-prompt">
+                <PromoteSectionPolicy>
+                    <PolicySectionCard>
+                        <NuxtLink to="/policies/student-activity/custom-esport">
+                            <h1 class="underline">เกมที่ใช่ใครก็ชอบ</h1>
+                        </NuxtLink>
+                        <p>
+                            เล่นเกมเดียวไม่สนุก ต้องเล่น 2 ครั้ง ถึงจะสนุก
+                            อยากเล่นเกมไหนก็โหวตกันเลย...
+                        </p>
+                    </PolicySectionCard>
+                    <PolicySectionCard>
+                        <NuxtLink to="/policies/student-activity/custom-sport">
+                            <h1 class="underline">1 เสียง 1 สนาม</h1>
+                        </NuxtLink>
+                        <p>
+                            เล่นกีฬาเดียวไม่สนุก ต้องเล่น 2 ครั้ง ถึงจะสนุก
+                            อยากเล่นกีฬาไหนก็โหวตกันเลย...
+                        </p>
+                    </PolicySectionCard>
+                    <PolicySectionCard>
+                        <NuxtLink to="/policies/student-activity/random-dance">
+                            <h1 class="underline">เต้นสุ่มจุ่มเพลง</h1>
+                        </NuxtLink>
+                        <p>
+                            เต้นเพลงเดียวสนุกหรอ ต้องเต้นหลาย ๆ เพลงสิถึงจะสนุก
+                            จัดทุก ๆ วันศุกร์สุดท้ายของเดือน...
+                        </p>
+                    </PolicySectionCard>
 
-                <PolicySectionCard>
-                    <NuxtLink to="/policies/academic/custom-notebook-cover">
-                        <h1 class="underline">ปกนี้พี่ให้ทำ</h1>
-                    </NuxtLink>
-                    <p>
-                        ออกแบบปกสมุดแล้วมาโหวดกันเถอะ สุดท้ายใครจะเป็นผู้ชนะ...
-                    </p>
-                </PolicySectionCard>
-                <PolicySectionCard>
-                    <NuxtLink to="/policies/student-rule/bottle-race">
-                        <h1 class="underline">แต้มรักษ์โลก</h1>
-                    </NuxtLink>
-                    <p>
-                        อยากได้และออกเกียรติบัตรจิตอาสามั้ยหล่ะ พี่มีให้นะ
-                        ลองเอาขวดมาให้พี่สิ
-                        (แอบกระซิบว่าห้องไหนเก็บได้เยอะได้เงินด้วยน้า)...
-                    </p>
-                </PolicySectionCard>
-                <PolicySectionCard>
-                    <NuxtLink to="/policies/academic/app-pro-max">
-                        <h1 class="underline">แอพสภา Pro Max</h1>
-                    </NuxtLink>
-                    <p>สภาจะมีแอพแล้วจ้า แอพเริ่ด ๆ เขียนเอง UI เริ่ด ๆ...</p>
-                </PolicySectionCard>
-            </PromoteSectionPolicy>
+                    <PolicySectionCard>
+                        <NuxtLink to="/policies/academic/custom-notebook-cover">
+                            <h1 class="underline">ปกนี้พี่ให้ทำ</h1>
+                        </NuxtLink>
+                        <p>
+                            ออกแบบปกสมุดแล้วมาโหวดกันเถอะ
+                            สุดท้ายใครจะเป็นผู้ชนะ...
+                        </p>
+                    </PolicySectionCard>
+                    <PolicySectionCard>
+                        <NuxtLink to="/policies/student-rule/bottle-race">
+                            <h1 class="underline">แต้มรักษ์โลก</h1>
+                        </NuxtLink>
+                        <p>
+                            อยากได้และออกเกียรติบัตรจิตอาสามั้ยหล่ะ พี่มีให้นะ
+                            ลองเอาขวดมาให้พี่สิ
+                            (แอบกระซิบว่าห้องไหนเก็บได้เยอะได้เงินด้วยน้า)...
+                        </p>
+                    </PolicySectionCard>
+                    <PolicySectionCard>
+                        <NuxtLink to="/policies/academic/app-pro-max">
+                            <h1 class="underline">แอพสภา Pro Max</h1>
+                        </NuxtLink>
+                        <p>
+                            สภาจะมีแอพแล้วจ้า แอพเริ่ด ๆ เขียนเอง UI เริ่ด ๆ...
+                        </p>
+                    </PolicySectionCard>
+                </PromoteSectionPolicy>
+                <NuxtLink
+                    to="/policies"
+                    class="mt-4 w-full bg-blue-zodiac-900 p-4 rounded-xl text-center underline"
+                    >ดูเพิ่มเติม...</NuxtLink
+                >
+            </div>
         </AppSection>
-
-        <AppSection>
-            <AppSectionHeader class="text-center"
-                >กล้าคิด กล้าทำ กล้านำ กล้าเปลี่ยนแปลง</AppSectionHeader
-            >
-            <NuxtImg class="w-full" src="/footer.png"></NuxtImg>
-        </AppSection>
-
-        <p class="text-center my-4 font-prompt text-blue-zodiac-950">
-            © 2026 Formatier FPNC | Licensed under the Apache License 2.0
-        </p>
     </div>
 </template>

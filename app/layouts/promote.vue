@@ -35,4 +35,15 @@
     </PromoteNav>
 
     <slot />
+
+    <AppSection>
+        <AppSectionHeader class="text-center"
+            >กล้าคิด กล้าทำ กล้านำ กล้าเปลี่ยนแปลง</AppSectionHeader
+        >
+        <NuxtImg class="w-full" src="/footer.png"></NuxtImg>
+    </AppSection>
+
+    <p class="text-center my-4 font-prompt text-blue-zodiac-950">
+        © 2026 Formatier FPNC | Licensed under the Apache License 2.0
+    </p>
 </template>
