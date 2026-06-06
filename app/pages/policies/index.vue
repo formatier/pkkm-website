@@ -55,7 +55,9 @@ const { data: studentRulePolicies } = await useAsyncData(
                     v-for="policy in studentActivityPolicies"
                     :key="policy.id"
                 >
-                    <h1>{{ policy.title }}</h1>
+                    <NuxtLink :to="`${policy.path}`">
+                        <h1 class="underline">{{ policy.title }}</h1>
+                    </NuxtLink>
                     <p>{{ policy.description }}...</p>
                 </PolicySectionCard>
             </PolicySectionCardContainer>
@@ -68,7 +70,9 @@ const { data: studentRulePolicies } = await useAsyncData(
                     v-for="policy in servicePolicies"
                     :key="policy.id"
                 >
-                    <h1>{{ policy.title }}</h1>
+                    <NuxtLink :to="`${policy.path}`">
+                        <h1 class="underline">{{ policy.title }}</h1>
+                    </NuxtLink>
                     <p>{{ policy.description }}...</p>
                 </PolicySectionCard>
             </PolicySectionCardContainer>
@@ -81,7 +85,9 @@ const { data: studentRulePolicies } = await useAsyncData(
                     v-for="policy in academicPolicies"
                     :key="policy.id"
                 >
-                    <h1>{{ policy.title }}</h1>
+                    <NuxtLink :to="`${policy.path}`">
+                        <h1 class="underline">{{ policy.title }}</h1>
+                    </NuxtLink>
                     <p>{{ policy.description }}...</p>
                 </PolicySectionCard>
             </PolicySectionCardContainer>
@@ -94,7 +100,9 @@ const { data: studentRulePolicies } = await useAsyncData(
                     v-for="policy in studentRulePolicies"
                     :key="policy.id"
                 >
-                    <h1>{{ policy.title }}</h1>
+                    <NuxtLink :to="`${policy.path}`">
+                        <h1 class="underline">{{ policy.title }}</h1>
+                    </NuxtLink>
                     <p>{{ policy.description }}...</p>
                 </PolicySectionCard>
             </PolicySectionCardContainer>
