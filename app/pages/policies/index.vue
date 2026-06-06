@@ -52,7 +52,7 @@ const { data: studentRulePolicies } = await useAsyncData(
             <AppSectionHeader>นโยบายฝ่ายกิจกรรม</AppSectionHeader>
             <PolicySectionCardContainer>
                 <PolicySectionCard
-                    v-for="policy in academicPolicies"
+                    v-for="policy in studentActivityPolicies"
                     :key="policy.id"
                 >
                     <h1>{{ policy.title }}</h1>
@@ -63,14 +63,41 @@ const { data: studentRulePolicies } = await useAsyncData(
 
         <AppSection bgColor="zodiac">
             <AppSectionHeader>นโยบายฝ่ายบริการ</AppSectionHeader>
+            <PolicySectionCardContainer>
+                <PolicySectionCard
+                    v-for="policy in servicePolicies"
+                    :key="policy.id"
+                >
+                    <h1>{{ policy.title }}</h1>
+                    <p>{{ policy.description }}...</p>
+                </PolicySectionCard>
+            </PolicySectionCardContainer>
         </AppSection>
 
         <AppSection bgColor="zodiac">
             <AppSectionHeader>นโยบายฝ่ายวิชาการ</AppSectionHeader>
+            <PolicySectionCardContainer>
+                <PolicySectionCard
+                    v-for="policy in academicPolicies"
+                    :key="policy.id"
+                >
+                    <h1>{{ policy.title }}</h1>
+                    <p>{{ policy.description }}...</p>
+                </PolicySectionCard>
+            </PolicySectionCardContainer>
         </AppSection>
 
         <AppSection bgColor="zodiac">
             <AppSectionHeader>นโยบายฝ่ายระเบียบ</AppSectionHeader>
+            <PolicySectionCardContainer>
+                <PolicySectionCard
+                    v-for="policy in studentRulePolicies"
+                    :key="policy.id"
+                >
+                    <h1>{{ policy.title }}</h1>
+                    <p>{{ policy.description }}...</p>
+                </PolicySectionCard>
+            </PolicySectionCardContainer>
         </AppSection>
     </div>
 </template>
