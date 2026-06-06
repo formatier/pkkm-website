@@ -32,7 +32,7 @@ const d_id = route.query.d_id?.toString();
                     <NuxtLink class="btn btn-primary btn-lg" to="/policies">
                         นโยบาย
                     </NuxtLink>
-                    <NuxtLink class="btn btn-outline btn-lg" to="/policies">
+                    <NuxtLink class="btn btn-outline btn-lg opacity-50">
                         เสนอความคิดเห็น
                     </NuxtLink>
                 </div>
