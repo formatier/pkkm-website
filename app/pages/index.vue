@@ -31,11 +31,11 @@ const d_id = route.query.d_id?.toString();
                 <div class="flex gap-5 lg:justify-start justify-center">
                     <NuxtLink
                         class="btn btn-primary btn-lg opacity-50"
-                        to="/policy"
+                        to="/policies"
                     >
                         นโยบาย
                     </NuxtLink>
-                    <NuxtLink class="btn btn-outline btn-lg" to="/policy">
+                    <NuxtLink class="btn btn-outline btn-lg" to="/policies">
                         เสนอความคิดเห็น
                     </NuxtLink>
                 </div>
