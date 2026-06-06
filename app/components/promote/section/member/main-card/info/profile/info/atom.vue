@@ -3,7 +3,7 @@
         <h1 class="text-xl lg:text-2xl font-medium">
             <slot></slot>
         </h1>
-        <p class="text-xl lg:text-2xl font-normal backdrop-blur-sm">
+        <p class="text-xl lg:text-2xl font-normal backdrop-blur-sm rounded-sm">
             <slot name="text"></slot>
         </p>
     </div>
