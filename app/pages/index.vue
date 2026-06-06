@@ -30,7 +30,7 @@ const d_id = route.query.d_id?.toString();
 
                 <div class="flex gap-5 lg:justify-start justify-center">
                     <NuxtLink
-                        class="btn btn-primary btn-lg opacity-50"
+                        class="btn btn-primary btn-lg"
                         to="/policies"
                     >
                         นโยบาย
