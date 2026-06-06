@@ -39,14 +39,14 @@ const { data: studentRulePolicies } = await useAsyncData(
 
 <template>
     <div class="font-prompt">
-        <PolicyHero>
-            <PolicyHeroHeader>นโยบายต่าง ๆ</PolicyHeroHeader>
-            <PolicyHeroParagraph>
+        <Hero>
+            <HeroHeader>นโยบายต่าง ๆ</HeroHeader>
+            <HeroParagraph>
                 พรรคฟ้าขาวก้าวใหม่
                 มาพร้อมกับนโยบายที่ได้รับการรับรองมาแล้วว่าทำได้จริง
                 และได้รับการกลั่นกรองมาแล้วจากทุกคน
-            </PolicyHeroParagraph>
-        </PolicyHero>
+            </HeroParagraph>
+        </Hero>
 
         <AppSection bgColor="zodiac">
             <AppSectionHeader>นโยบายฝ่ายกิจกรรม</AppSectionHeader>

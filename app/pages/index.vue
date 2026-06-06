@@ -29,10 +29,7 @@ const d_id = route.query.d_id?.toString();
                 </PromoteHeroMessageParagraph>
 
                 <div class="flex gap-5 lg:justify-start justify-center">
-                    <NuxtLink
-                        class="btn btn-primary btn-lg"
-                        to="/policies"
-                    >
+                    <NuxtLink class="btn btn-primary btn-lg" to="/policies">
                         นโยบาย
                     </NuxtLink>
                     <NuxtLink class="btn btn-outline btn-lg" to="/policies">
@@ -178,7 +175,7 @@ const d_id = route.query.d_id?.toString();
                                           ? 'student-activity'
                                           : idx === 2
                                             ? 'service'
-                                            : 'student_rule'
+                                            : 'student-rule'
                                 }`"
                                 class="w-full h-full flex items-center justify-center text-white underline"
                             >

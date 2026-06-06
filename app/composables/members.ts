@@ -42,7 +42,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/earn.png",
       name: "เมธาพร มาพวะ",
       tag: "สมาชิก",
       quote: "ไม่สะอื้นสดชื่นด้วยซ้ำ",
@@ -58,7 +58,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/jom.png",
       name: "จันทิมา โจไธสงค์",
       tag: "สมาชิก",
       quote: "ถึงพี่จะไม่ใช่ซีเคร็ทแต่พี่ก็อยากเป็นสภาที่เด็ดปี69",
@@ -72,6 +72,20 @@ export function useMembers(props?: UseMembersProps) {
         custom: {
           วิชาที่ถนัด: "เคมีและภาษาอังกฤษ",
         },
+      },
+    },
+    {
+      imageUrl: "/member-profiles/kao.png",
+      name: "วัฒนพงศ์ เตโช",
+      tag: "สมาชิก",
+      quote: "ไม่หล่อแต่ลาบ",
+      info: {
+        nickname: "เก้า",
+        birthday: "25/04/2011",
+        hobby: "กิน และ นอน",
+        grade: 4,
+        room: 1,
+        custom: {},
       },
     },
   ];
@@ -96,11 +110,12 @@ export function useMembers(props?: UseMembersProps) {
         room: 3,
         custom: {
           วิชาที่ถนัด: "คณิตศาสตร์และพละศึกษา",
+          ทีมที่ชอบ: "แมนยู",
         },
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/taitan.png",
       name: "กรณภัทร โชคเหมาะ",
       tag: "สมาชิก",
       quote: "หน้าเหวี่ยง อย่าทิ้งเค้า",
@@ -116,7 +131,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/vier.png",
       name: "สุจิราภรณ์ งามกระบวน",
       tag: "สมาชิก",
       quote: "ทุกปัญหามีทางออก ถ้าเราไม่หยุดพัฒนา",
@@ -127,12 +142,12 @@ export function useMembers(props?: UseMembersProps) {
         grade: 5,
         room: 2,
         custom: {
-          เคมี: "ไม่ใช่คนที่เก่งแต่พร้อมที่จะพัฒนา",
+          คำอธิบายตัวเอง: "ไม่ใช่คนที่เก่งแต่พร้อมที่จะพัฒนา",
         },
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/treasure.png",
       name: "ทรัพย์สิริ มาฆะเซ็น",
       tag: "สมาชิก",
       quote: "กลางวันนั่งเก็บเกรด พอพักเบรคเปิดสเตจส่วนตัว",
@@ -172,7 +187,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/preawa.png",
       name: "ณัฐชยา จันทร์คำ",
       tag: "สมาชิก",
       quote: "ดอกไม้ไม่ได้บานพร้อมกัน แต่ทุกดอกมีฤดูของตัวเอง",
@@ -188,7 +203,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/crape.png",
       name: "ไตรภูมิ อาริยะ",
       tag: "สมาชิก",
       quote: "มะนาวก็เปรี้ยวไม่เท่าเรา",
@@ -201,6 +216,20 @@ export function useMembers(props?: UseMembersProps) {
         custom: {
           ประวัติศาสตร์: "ได้รู้เรื่องที่เกิดขึ้นมาก่อนเเล้ว",
         },
+      },
+    },
+    {
+      imageUrl: "/member-profiles/tonnam.png",
+      name: "เนตรนภา สิงห์หลง",
+      tag: "สมาชิก",
+      quote: "ไม่เคยขึ้นรถผิดสาย เพราะเราเป็นคนขับ",
+      info: {
+        nickname: "ต้นน้ำ",
+        birthday: "13/11/2010",
+        hobby: "เล่นกีตาร์",
+        grade: 4,
+        room: 6,
+        custom: {},
       },
     },
   ];
@@ -226,7 +255,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/beam.png",
       name: "กชพรรณ สุราษฎร์",
       tag: "สมาชิก",
       quote: "คนโหดประจำทุกปี",
@@ -242,7 +271,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/melon.png",
       name: "กนกพร ก้อนทอง",
       tag: "สมาชิก",
       quote: "ชื่อโมเพื่อนเรียกแตงโมเพราะว่าน่ารัก",
@@ -258,7 +287,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/yok.png",
       name: "พลอยไพริน หินประกอบ",
       tag: "สมาชิก",
       quote: "เรียกหยกก็ได้ เรียกพลอยก็ดี 🙌🏻",
@@ -274,7 +303,7 @@ export function useMembers(props?: UseMembersProps) {
       },
     },
     {
-      imageUrl: "",
+      imageUrl: "/member-profiles/thanya.png",
       name: "ธัญญ่า ผ่านจังหา",
       tag: "สมาชิก",
       quote: "ไม่ต้องเก่งที่สุด แค่ไม่หยุดก็พอ",
