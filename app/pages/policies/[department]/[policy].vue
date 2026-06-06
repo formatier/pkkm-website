@@ -18,13 +18,13 @@ const { data: post } = await useAsyncData(
 <template>
     <div class="vision-padding-x font-prompt">
         <div class="lg:px-42 xl:px-67 pb-18">
-            <NuxtLink
+            <button
                 class="flex gap-1 items-center hover:underline my-6"
-                to="/policies"
+                @click="$router.back()"
             >
                 <Icon name="ph:arrow-left"></Icon>
                 <span>กลับไปหน้านโยบายทั้งหมด</span>
-            </NuxtLink>
+            </button>
             <h1
                 class="xl:text-6xl xl:leading-18 text-5xl leading-16 font-semibold break-keep whitespace-normal mb-6"
             >

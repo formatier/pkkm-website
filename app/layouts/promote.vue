@@ -16,14 +16,23 @@
         </template>
 
         <template #external-link>
-            <NuxtLink to="/" class="flex items-center">
+            <a
+                href="https://www.instagram.com/phakaokhaomai.official/"
+                class="flex items-center"
+            >
                 <Icon name="ph:instagram-logo" class="size-6"></Icon>
-            </NuxtLink>
-            <NuxtLink to="/" class="flex items-center">
+            </a>
+            <a href="/" class="flex items-center">
                 <Icon name="ph:tiktok-logo" class="size-6"></Icon>
-            </NuxtLink>
+            </a>
+            <a
+                href="https://github.com/formatier/pkkm-website"
+                class="flex items-center"
+            >
+                <Icon name="ph:github-logo" class="size-6"></Icon>
+            </a>
         </template>
     </PromoteNav>
 
-    <slot/>
+    <slot />
 </template>
