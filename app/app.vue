@@ -4,7 +4,7 @@
     <NuxtLayout v-if="false">
         <NuxtPage :transition="{ name: 'page', mode: 'out-in' }"></NuxtPage>
     </NuxtLayout>
-    <div class="flex flex-col w-full h-dvh items-center justify-center">
+    <div class="flex flex-col w-full h-dvh items-center justify-center px-24">
         <div class="font-prompt prose-xl">
             <h1>เว็บไซต์ปิดตัวลงชั่วคราว</h1>
             <p class="max-w-lg">
@@ -14,11 +14,7 @@
             </p>
             <p class="max-w-lg">
                 ทั้งนี้
-                ยังสามารถเข้าถึงเว็บไซต์ได้โดยการคัดลอกโปรเจกต์หรือซอร์สโค้ดและนำมาเปิดใช้งานในสภาพแวดล้อมเครื่อข่ายถ้องถิ่น
-            </p>
-            <p class="max-w-lg">
-                และจะกลับมาเปิดใหม่อีกครั้งในวันที่ 16 มิถุนายน 2569 ด้วยเหตุผล
-                เพื่อนำไปใช้เพื่อการศึกษาการทำงานต่าง ๆ
+                ยังสามารถเข้าถึงเว็บไซต์ได้โดยการคัดลอกโปรเจกต์หรือซอร์สโค้ดและนำมาเปิดใช้งานในสภาพแวดล้อมเครื่อข่ายท้องถิ่น
             </p>
         </div>
     </div>
