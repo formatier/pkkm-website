@@ -1,23 +1,19 @@
 <template>
     <NuxtRouteAnnouncer />
     <NuxtLoadingIndicator />
-    <NuxtLayout v-if="false">
+    <div
+        class="flex py-4 bg-amber-200 font-prompt items-center border-b-2 border-amber-300 justify-center flex-col"
+    >
+        <p class="text-blue-zodiac-950">
+            เว็บไซต์นี้ถูกเก็บถาวรตั้งแต่วันที่ 16 มิถุนายน 2569
+        </p>
+        <p class="text-blue-zodiac-950">
+            © 2026 Formatier FPNC | Licensed under the Apache License 2.0
+        </p>
+    </div>
+    <NuxtLayout>
         <NuxtPage :transition="{ name: 'page', mode: 'out-in' }"></NuxtPage>
     </NuxtLayout>
-    <div class="flex flex-col w-full h-dvh items-center justify-center px-24">
-        <div class="font-prompt prose-xl">
-            <h1>เว็บไซต์ปิดตัวลงชั่วคราว</h1>
-            <p class="max-w-lg">
-                ด้วยเหตุผลทางการเลือกตั้งสภานักเรียนในวันที่ 15 มิถุนายน 2569
-                ได้ระบุเอาไว้ว่า ห้ามหาเสียงในวันเลือกตั้ง
-                ทางเราจึงปิดตัวเว็บไซต์ลงชั่วคราว
-            </p>
-            <p class="max-w-lg">
-                ทั้งนี้
-                ยังสามารถเข้าถึงเว็บไซต์ได้โดยการคัดลอกโปรเจกต์หรือซอร์สโค้ดและนำมาเปิดใช้งานในสภาพแวดล้อมเครื่อข่ายท้องถิ่น
-            </p>
-        </div>
-    </div>
 </template>
 
 <style>
