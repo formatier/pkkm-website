@@ -5,10 +5,10 @@
         class="flex py-4 bg-amber-200 font-prompt items-center border-b-2 border-amber-300 justify-center flex-col"
     >
         <p class="text-blue-zodiac-950">
-            เว็บไซต์นี้ถูกเก็บถาวรตั้งแต่วันที่ 16 มิถุนายน 2569
+            เว็บไซต์นี้ถูกเก็บถาวร<br class="md:hidden"/>ตั้งแต่วันที่ 16 มิถุนายน 2569
         </p>
         <p class="text-blue-zodiac-950">
-            © 2026 Formatier FPNC | Licensed under the Apache License 2.0
+            © 2026 Formatier FPNC <br/> Licensed under the Apache License 2.0
         </p>
     </div>
     <NuxtLayout>
